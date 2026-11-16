@@ -105,7 +105,7 @@ function draw() {
 
   //titolo
   fill(238, 229, 233);
-  textSize(38);
+  textSize(40);
   text("Most visited art museums in 2025", margin, margin + 15);
 
   //legenda

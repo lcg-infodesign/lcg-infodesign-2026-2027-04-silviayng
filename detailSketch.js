@@ -33,7 +33,7 @@ let hColonna = 40; //altezza
 let gapX = 6; //spazio orizzontale tra colonne
 let gapY = 8; //spazio verticale tra righe
 let altezzaTesto = 120; //spazio tra testo e colonne
-let visitatoriPerColonna = 10000; //quanti visitatori vale una colonna
+let visitatoriPerColonna = 1000; //quanti visitatori vale una colonna
 
 async function setup() {
   let data = await loadTable("assets/museums.csv", ",", "header");
@@ -95,7 +95,7 @@ function draw() {
   line(xInizio + 4, cy, xInizio + 16, cy + 10); //linea bassa
   noStroke();
 
-  textSize(20);
+  textSize(25);
   text(visitors.toLocaleString('it-IT') + " visitors in 2025", xInizio, margin + 45);
     
   // legenda
@@ -107,7 +107,7 @@ function draw() {
   disegnoColonna(xInizio + wLegenda / 2, yLegenda + hLegenda, yLegenda, wLegenda, '#EEE5E9', scalaLegenda);
   //testo legenda
   fill(238, 229, 233);
-  textSize(15);
+  textSize(20);
   textAlign(LEFT, CENTER);
   text("= " + visitatoriPerColonna.toLocaleString('it-IT') + " visitors (rounded up)",
   xInizio + wLegenda + 8, yLegenda + hLegenda / 2);
