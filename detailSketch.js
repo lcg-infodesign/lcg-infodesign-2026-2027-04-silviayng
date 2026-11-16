@@ -107,7 +107,7 @@ function draw() {
   disegnoColonna(xInizio + wLegenda / 2, yLegenda + hLegenda, yLegenda, wLegenda, '#EEE5E9', scalaLegenda);
   //testo legenda
   fill(238, 229, 233);
-  textSize(20);
+  textSize(18);
   textAlign(LEFT, CENTER);
   text("= " + visitatoriPerColonna.toLocaleString('it-IT') + " visitors (rounded up)",
   xInizio + wLegenda + 8, yLegenda + hLegenda / 2);
