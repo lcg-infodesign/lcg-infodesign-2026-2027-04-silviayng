@@ -33,7 +33,7 @@ let hColonna = 40; //altezza
 let gapX = 6; //spazio orizzontale tra colonne
 let gapY = 8; //spazio verticale tra righe
 let altezzaTesto = 120; //spazio tra testo e colonne
-let visitatoriPerColonna = 1000; //quanti visitatori vale una colonna
+let visitatoriPerColonna = 5000; //quanti visitatori vale una colonna
 
 async function setup() {
   let data = await loadTable("assets/museums.csv", ",", "header");
